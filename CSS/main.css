@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --c1: #3e3232;
+  --c2: #503c3c;
+  --c3: #7e6363;
+  --c4: #a87c7c;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #221c1c;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: var(--c4);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+  position: relative;
+}
+.image {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--c1);
+  padding: 3px;
+  height: 150px;
+  width: 150px;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 3px soolid;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+/* textbox */
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-data .name {
+  font-size: 24px;
+  font-weight: 500px;
+}
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400px;
+}
+.profile-card .media-bottons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.media-bottons .link {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #4070f4;
+  margin: 0 8px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+/* buttons */
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.buttons .button {
+  background-color: var(--c1);
+  padding: 8px 24px;
+  margin: 0 10px;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+.buttons .button:hover {
+  background-color: var(--c2);
+}
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color: var(--c1);
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+}
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+.data:last-child {
+  border-right: none;
+}
+.data i {
+  font-size: 18px;
+  margin-right: 6px;
+}
